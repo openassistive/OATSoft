@@ -5,13 +5,16 @@ branches:
   only:
   - master
 before_install:
+- npm install grunt-cli -g
+- npm install bower -g
 - npm install -g hexo
-- npm install
+- npm install hexo-cli -g
 - cd themes/tranquilpeak/
 - npm install
 - bower install
 - npm run prod
 - cd ../../
+- npm install
 install:
 - hexo generate
 - hexo aloglia

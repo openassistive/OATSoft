@@ -10,7 +10,7 @@ before_install:
 - cd themes/tranquilpeak/
 - npm install
 - bower install
-- grunt build
+- npm run prod
 - cd ../../
 install:
 - hexo generate

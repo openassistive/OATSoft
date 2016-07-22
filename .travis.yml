@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "5"
+branches:
+  only:
+  - master
+before_install:
+- npm install -g hexo
+- npm install
+- cd themes/tranquilpeak/
+- npm install
+- bower install
+- grunt build
+- cd ../../
+install:
+- hexo generate
+- hexo aloglia
+before_script:
+- git config --global user.name 'Graham Cox via Travis CI'
+- git config --global user.email 'graham@grahamcox.co.uk'
+- sed -i'' "s~git@github.com:openassistive/OATSoft.git~https://${GH_TOKEN}:x-oauth-basic@github.com/openassistive/OATSoft.git~" _config.yml
+script:
+- hexo deploy --silent

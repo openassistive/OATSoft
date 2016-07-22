@@ -51,7 +51,7 @@ sidebar:
     author_links:
          github:
              title: global.github
-             url: https://github.com/ACECentre/OATSoft
+             url: https://github.com/openassistive/OATSoft
              icon: github
         # stack_overflow:
         #     title: global.stack_overflow
@@ -161,7 +161,7 @@ tag_pagination: true
 # You can't use Disqus and Duoshuo together
 # then fill the right shortname
 # Your Disqus shortname
-disqus_shortname:
+disqus_shortname: oatsoft
 # Your Duoshuo shortname
 duoshuo_shortname:
 # Your Google analystics web property ID : UA-XXXXX-X

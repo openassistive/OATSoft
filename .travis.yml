@@ -7,7 +7,7 @@ branches:
 before_install:
 - npm install grunt-cli -g
 - npm install bower -g
-- npm install -g hexo
+- npm install -g hexo@3.1.0
 - npm install hexo-cli -g
 - cd themes/tranquilpeak/
 - npm install
@@ -24,7 +24,7 @@ before_script:
 - sed -i'' "s~git@github.com:openassistive/OATSoft.git~https://${GH_TOKEN}:x-oauth-basic@github.com/openassistive/OATSoft.git~"
   _config.yml
 script:
-- npm run deploy
+- hexo deploy
 env:
   global:
     secure: nkpYRBFa/fY6J2jZvzPRjI8Up/9beKZX+bbUt+A9OA48lUOrNbE5rTUVe3HDVMxSdYuN1QvUJcrH12d2dasG4Bq146HEXsB7wroO8rViZvROqOsy47uubLZ1e+2mCDi+hHF62CAcz6l8KkihbdO4qH3o2WbPXAuIL1BBi1Kl81XzYsMn1136sKsGgWFlX+kxhuErsKT/sY4eEGGIETtb0Ctrfo5TO7XHQJ85E//WsO6DAViDbtBW4Dw8AjrYXBKtEMU/1DW7FgbHTPXJ2yJt6ezgjI4eWSE3nRhOTrSSn+iHSwwfk9WrLEhDEcqfxCBzIwlSx38zYNz7eC4/fL6MofemO3ZbJuqwFwZJGgxJ/Nm0ZctcDwxoU81zzOMjlsulEmXIcps42+IQWon41KWcnxTWf2nPpZChJ3UIbx3wgCJ4s9T5GgdHNTjtS7dkUOKESyBj0Oqsf2BpZmaEwCrY6BSG+B+WeIYwHlEeMWdy8nD2MslJlSTx6E237WBuRZvl6bBiYcgGr1QsBDUTa36MYWmZgUfZO8271Rubv9DfmRfPwj1V6wvkhsDtFTYFXZvOzY0XmVtwZN6pIXYnav9qNu80MNGQnuJFvmmPM/3gWdIhKfcUQSrGSAYyZVcYujDp8O9KCtv8ddkU4rF3seEKRBnsGdeH/PcDHU+S8OJ4aU8=
